@@ -6,20 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metronome</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://i.pinimg.com/736x/a0/fd/17/a0fd171c6aa07b4b2137446fda111fdd.jpg" />
 </head>
 <body>
+    <div class="input-container">
+        <input type="checkbox" id="metronome" value="metronome" checked>
+        <label for="metronome">Metronone</label>
+
+        <input type="checkbox" id="hi-hat" value="hi-hat">
+        <label for="hi-hat">Hi Hat</label>
+        <input type="number" class="hiHat-quantity" name="quantity" min="1" max="4">
+        <label for="quantity">beat 1</label>
+
+        <input type="checkbox" id="kick-drum" value="kick-drum">
+        <label for="kick-drum">Kick Drum</label>
+        <input type="number" class="kickDrum-quantity" name="quantity" min="1" max="4">
+        <label for="quantity">beat 1</label>
+
+        <input type="checkbox" id="snare" value="snare">
+        <label for="snare">Snare</label>
+        <input type="number" class="snare-quantity" name="quantity" min="1" max="4">
+        <label for="quantity">On what beat?</label>
+    </div>
+
     <div class="tip">
         (Click anywhere to hear sound...)
     </div>
-
     <div class="metronome">
         <div class="background-left"></div>
         <div class="background-center">
             <div class="core"></div>
         </div>
         <div class="background-right"></div>
-        <div class="arm"></div>
+        <div class="arm"></div>      
     </div>
+    <br>
+    <br>
+    <div class="metronome-count">count</div>
 
     <script src="main.js"></script>
 </body>
