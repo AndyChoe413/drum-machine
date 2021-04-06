@@ -10,34 +10,42 @@
 </head>
 <body>
     <div class="input-container">
-        <input type="checkbox" id="metronome" value="metronome" checked>
-        <label for="metronome">Metronone</label>
-
+        <div class="tip">
+            (Click anywhere to hear sound...)
+        </div>
+        <div class="metronome-box">
+            <input type="checkbox" id="metronome" value="metronome" checked>
+            <label for="metronome">Metronone</label>
+        </div>
+        
+        <div class="hi-hat-box">
         <input type="checkbox" id="hi-hat" value="hi-hat">
         <label for="hi-hat">Hi Hat</label>
         <input type="number" class="hiHat-quantity" name="quantity" min="1" max="4">
         <label for="quantity">beat 1</label>
         <input type="number" class="hiHat-quantity2" name="quantity" min="1" max="4">
         <label for="quantity">beat 2</label>
+        </div>
 
+        <div class="kick-drum-box">
         <input type="checkbox" id="kick-drum" value="kick-drum">
         <label for="kick-drum">Kick Drum</label>
         <input type="number" class="kickDrum-quantity" name="quantity" min="1" max="4">
         <label for="quantity">beat 1</label>
         <input type="number" class="kickDrum-quantity2" name="quantity" min="1" max="4">
         <label for="quantity">beat 2</label>
+        </div>
 
+        <div class="snare-box">
         <input type="checkbox" id="snare" value="snare">
         <label for="snare">Snare</label>
         <input type="number" class="snare-quantity" name="quantity" min="1" max="4">
         <label for="quantity">beat 1</label>
         <input type="number" class="snare-quantity2" name="quantity" min="1" max="4">
         <label for="quantity">beat 2</label>
+        </div>
     </div>
 
-    <div class="tip">
-        (Click anywhere to hear sound...)
-    </div>
     <div class="metronome">
         <div class="background-left"></div>
         <div class="background-center">
@@ -46,7 +54,6 @@
         <div class="background-right"></div>
         <div class="arm"></div>      
     </div>
-    <br>
     <br>
     <div class="metronome-count">count</div>
 

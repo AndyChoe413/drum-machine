@@ -22,7 +22,7 @@ function update() {
         if (currentCount === 1) 
             element.style.background = 'red';
         if (currentCount === 2) 
-            element.style.background = 'white';
+            element.style.background = 'orange';
         if (currentCount === 3) 
             element.style.background = 'blue';
         if (currentCount === 4) 
@@ -141,6 +141,8 @@ function update() {
     //grab and append the current count
     const count = document.querySelector('.metronome-count')
     count.innerText = currentCount
+    count.style.color = 'white'
+    count.style.fontSize = '35px'
 
     //reset the current count
     if (currentCount > 3) {

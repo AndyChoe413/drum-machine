@@ -77,9 +77,22 @@ body {
   animation: tick 1200ms ease-in-out infinite;
 }
 
-
-
 .input-container {
-    background-color: hotpink;
-    padding: 2rem;
+  margin: 7px;
+  width: 55vw;
+  max-height: 70%;
+  background-color: hotpink;
+  padding: 2rem;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+}
+
+.metronome-box,
+.hi-hat-box,
+.kick-drum-box,
+.snare-box {
+  margin: 5px;
+  padding: 5px;
+  color: aliceblue;
 }
