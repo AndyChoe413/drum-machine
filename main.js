@@ -61,6 +61,21 @@ function update() {
         hiHat.play();
     }
 
+    const hiHatBeat2 = document.querySelector('.hiHat-quantity2')
+    if (Number(hiHatBeat2.value) === 1 && currentCount === 1) {
+        hiHat.load();
+        hiHat.play();
+    } else if (Number(hiHatBeat2.value) === 2 && currentCount === 2) {
+        hiHat.load();
+        hiHat.play();
+    } else if (Number(hiHatBeat2.value) === 3 && currentCount === 3) {
+        hiHat.load();
+        hiHat.play();
+    } else if (Number(hiHatBeat2.value) === 4 && currentCount === 4) {
+        hiHat.load();
+        hiHat.play();
+    }
+
     //check if kickDrum is checked
     const kickDrumChecked = document.querySelector('#kick-drum')
     if (kickDrumChecked.checked) {
@@ -81,6 +96,17 @@ function update() {
         kickDrum.play()
     }
 
+    const kickDrumBeat2 = document.querySelector('.kickDrum-quantity2')
+    if (Number(kickDrumBeat2.value) === 1 && currentCount === 1) {
+        kickDrum.play()
+    } else if (Number(kickDrumBeat2.value) === 2 && currentCount === 2) {
+        kickDrum.play()
+    } else if (Number(kickDrumBeat2.value) === 3 && currentCount === 3) {
+        kickDrum.play()
+    } else if (Number(kickDrumBeat2.value) === 4 && currentCount === 4) {
+        kickDrum.play()
+    }
+
     //check if snareDrum is checked
     const snareDrumChecked = document.querySelector('#snare')
     if (snareDrumChecked.checked) {
@@ -98,6 +124,17 @@ function update() {
     } else if (Number(snareDrumBeat.value) === 3 && currentCount === 3) {
         snareDrum.play()
     } else if (Number(snareDrumBeat.value) === 4 && currentCount === 4) {
+        snareDrum.play()
+    }
+
+    const snareDrumBeat2 = document.querySelector('.snare-quantity2')
+    if (Number(snareDrumBeat2.value) === 1 && currentCount === 1) {
+        snareDrum.play()
+    } else if (Number(snareDrumBeat2.value) === 2 && currentCount === 2) {
+        snareDrum.play()
+    } else if (Number(snareDrumBeat2.value) === 3 && currentCount === 3) {
+        snareDrum.play()
+    } else if (Number(snareDrumBeat2.value) === 4 && currentCount === 4) {
         snareDrum.play()
     }
 
